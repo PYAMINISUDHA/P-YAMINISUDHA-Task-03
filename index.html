@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to the Cookie Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#quiz">Cookie Quiz</a></li>
+        <li><a href="#carousel">Image Carousel</a></li>
+        <li><a href="#tip">Cookie Tip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Shop Section -->
+  <section id="shop">
+    <h2>Our Delicious Cookies</h2>
+    <div class="cookie-container">
+      <div class="cookie-item">
+        <img src="https://www.recipetineats.com/tachyon/2017/06/Soft-Chocolate-Chip-Cookies-3.jpg?resize=500%2C500" alt="Chocolate Chip Cookies">
+        <p>Chocolate Chip Cookies</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="cookie-item">
+        <img src="https://brokebankvegan.com/wp-content/uploads/2022/06/2-Ingredient-Peanut-Butter-Cookies-26.jpg" alt="Peanut Butter Cookies">
+        <p>Peanut Butter Cookies</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="cookie-item">
+        <img src="https://lovingitvegan.com/wp-content/uploads/2021/10/Vegan-Oatmeal-Raisin-Cookies-Square-2.jpg" alt="Oatmeal Cookies">
+        <p>Oatmeal Raisin Cookies</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cookie Quiz Section -->
+  <section id="quiz">
+    <h2>Take the Cookie Quiz</h2>
+    <form id="cookie-quiz-form">
+      <label>
+        <input type="radio" name="cookie" value="Chocolate Chip"> Chocolate Chip
+      </label>
+      <label>
+        <input type="radio" name="cookie" value="Peanut Butter"> Peanut Butter
+      </label>
+      <label>
+        <input type="radio" name="cookie" value="Oatmeal Raisin"> Oatmeal Raisin
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="quiz-result"></div>
+  </section>
+
+  <!-- Cookie Image Carousel Section -->
+  <section id="carousel">
+    <h2>Our Cookie Gallery</h2>
+    <div class="carousel-container">
+      <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="carousel-slides">
+        <img src="https://funcookierecipes.com/wp-content/uploads/2022/09/Christmas-Cookies-Made-with-Basic-Cookie-Dough-1-500x375.jpg" alt="Chocolate Chip" class="carousel-slide">
+        <img src="https://thecookingfoodie.com/wp-content/uploads/2024/08/240756_d1-jpg.jpg" alt="Peanut Butter" class="carousel-slide">
+        <img src="https://blog.swiggy.com/wp-content/uploads/2024/07/Image-7_Ajwain-Cookies-1024x538.png" alt="Oatmeal Raisin" class="carousel-slide">
+      </div>
+      <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Cookie Tip Section -->
+  <section id="tip">
+    <h2>Cookie Tip of the Day</h2>
+    <p id="cookie-tip">Loading...</p>
+  </section>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="your-server-endpoint" method="POST" id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone number">Pnone number</label>
+        <input type="text" id="name" name="Pnone numbe" required><br>
+
+        <label for="home address">Home Address</label>
+        <input type="text" id="name" name="Home Address" required><br>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+<!-- Footer Section -->
+<footer>
+  <p>&copy; 2024 Cookie Shop. All Rights Reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
